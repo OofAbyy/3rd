@@ -33,43 +33,6 @@ html {
   display: none;
 }
 
-/*Scroll to top*/
-button {
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 9999999;
-  width: 40px;
-  height: 40px;
-  border-radius: 30%;
-  background-color: rgb(12, 12, 12);
-  color: white;
-  border: 4px solid var(--lightgray);
-  transition: 0.8s;
-}
-button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.2em;
-  line-height: 20px;
-  color: #fff;
-}
-button:hover {
-  cursor: pointer;
-  background-color: var(--gray);
-}
-button:active {
-  background-color: var(--lightgray);
-}
-button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
 /*hamburger menu*/
 .hamburger-menu {
   z-index: 999;
@@ -236,6 +199,10 @@ button.show {
   left: 60px;
   color: var(--accent);
 }
+.firstDiv span {
+  font-size: 18px;
+  color: var(--accent-2);
+}
 /*Groups*/
 section:nth-of-type(2) {
   width: 100vw;
@@ -259,7 +226,8 @@ section:nth-of-type(2) {
 .structure {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-row-gap: 20px;
+  grid-column-gap: 80px;
   width: fit-content;
 }
 
@@ -285,10 +253,14 @@ section:nth-of-type(2) {
   justify-content: center;
   font-size: 60px;
   color: var(--accent);
+  flex-direction: column;
 }
 /*Student Icons*/
-#stdholder1 {
-  display: grid;
+#stdcontainer,
+#stdcontainer2,
+#stdcontainer3,
+#stdcontainer4 {
+  display: none;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
 }
@@ -296,9 +268,17 @@ section:nth-of-type(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-color: var(--accent);
   color: var(--white);
   border-radius: 12px;
+  font-size: 30px;
+}
+button {
+  font-size: 60px;
+  color: var(--accent);
+  background-color: var(--trans);
+  border: none;
+  cursor: pointer;
 }

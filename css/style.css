@@ -235,8 +235,15 @@ section {
   align-items: center;
 }
 section:nth-of-type(1) {
+  height: 100vh;
   background: #e8e8e8;
   color: var(--accent);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
 .firstDiv {
   position: relative;
@@ -247,11 +254,13 @@ section:nth-of-type(1) {
   color: var(--accent);
   font-size: 50px;
   font-weight: bold;
-  top: calc(50% - 7em);
 }
 .firstDiv span {
   font-size: 30px;
   color: var(--bg-2);
+}
+.firstImg {
+  position: relative;
 }
 /*About*/
 

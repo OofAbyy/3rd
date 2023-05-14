@@ -41,10 +41,35 @@ const toggleBtn = document.querySelector("#clickme");
 const divList = document.querySelector("#stdholder1");
 
 // action to be taken when clicked on hide list button
-toggleBtn.addEventListener("click", () => {
-  if (divList.style.display == "none") {
-    divList.style.display = "block";
+function myFunction() {
+  var x = document.getElementById("stdcontainer");
+  if (x.style.display === "grid") {
+    x.style.display = "none";
   } else {
-    divList.style.display = "none";
+    x.style.display = "grid";
   }
-});
+}
+function myFunction2() {
+  var x = document.getElementById("stdcontainer2");
+  if (x.style.display === "grid") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "grid";
+  }
+}
+function myFunction3() {
+  var x = document.getElementById("stdcontainer3");
+  if (x.style.display === "grid") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "grid";
+  }
+}
+function myFunction4() {
+  var x = document.getElementById("stdcontainer4");
+  if (x.style.display === "grid") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "grid";
+  }
+}
