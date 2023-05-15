@@ -10,21 +10,17 @@
     <link rel="stylesheet" href="./js/node_modules/sal.js/dist/sal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
   </head>
   <body>
     <div class="header">
       <div class="mobile">
-        <div class="hamburger-menu"><div class="bar"></div></div>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
       </div>
       <div class="mobile-nav hide">
         <ul>
@@ -35,10 +31,7 @@
             <a href="html/progress.html">SƠ ĐỒ LỚP</a>
           </li>
           <li>
-            <a href="html/a.html">DANH SÁCH LỚP</a>
-          </li>
-          <li>
-            <a href="html/gallery.html">TKB LỚP</a>
+            <a href="html/tkb.html">TKB LỚP</a>
           </li>
         </ul>
       </div>
@@ -47,77 +40,33 @@
       <div class="firstDiv">
         <h1
           data-sal-duration="600"
-          data-sal="slide-left"
+          data-sal="slide-right"
           data-sal-delay="300"
           data-sal-easing="ease-in-out-bounce"
           data-sal-repeat="1"
         >
-          QUẢN LÝ HỌC SINH
+          2022 - 2023
         </h1>
         <span
           data-sal-duration="600"
-          data-sal="fade-in"
-          data-sal-delay="1000"
+          data-sal="slide-left"
+          data-sal-delay="500"
           data-sal-easing="fade-in"
           data-sal-repeat="1"
-          >A web application for student management system</span
+          >Lớp 10A1.3 - Khối A1</span
         >
-      </div>
-      <div>
-        <img
-          src="./img/learning.svg"
-          class="firstImg"
-          class="left"
+        <p
           data-sal-duration="600"
-          data-sal="slide-right"
-          data-sal-delay="300"
-          data-sal-easing="ease-out"
+          data-sal="slide-left"
+          data-sal-delay="500"
+          data-sal-easing="fade-in"
           data-sal-repeat="1"
-        />
+        >
+          41 học sinh
+        </p>
       </div>
     </section>
 
-    <section id="aboutme">
-      <div
-        class="left"
-        data-sal-duration="800"
-        data-sal="slide-right"
-        data-sal-delay="300"
-        data-sal-easing="ease-out"
-        data-sal-repeat="1"
-      >
-        <div class="left-grid">
-          <div class="introduce-content content-top">
-            <p class="introduce-title">Lớp 10A1.3</p>
-            <p class="introduce-info">41 học sinh</p>
-          </div>
-          <div class="introduce-content content-top">
-            <p class="introduce-title">Năm học</p>
-            <p class="introduce-info">2022 - 2023</p>
-          </div>
-          <div class="introduce-content content-bot">
-            <p class="introduce-title">Trường THPT</p>
-            <p class="introduce-info">Hùng Vương</p>
-          </div>
-          <div class="introduce-content content-bot">
-            <p class="introduce-title">Khối học</p>
-            <p class="introduce-info">A1</p>
-          </div>
-        </div>
-      </div>
-      <div class="rightdiv">
-        <img
-          src="./img/class.jpg"
-          class="myimg"
-          class="left"
-          data-sal-duration="1000"
-          data-sal="slide-left"
-          data-sal-delay="300"
-          data-sal-easing="ease-out"
-          data-sal-repeat="1"
-        />
-      </div>
-    </section>
     <section id="second">
       <div
         class="quote"
@@ -127,27 +76,37 @@
         data-sal-easing="ease-out"
         data-sal-repeat="1"
       >
-        "<span> 10A1</span>
-        <span>.3 </span>
-        <span>carry </span>
-        <span>on!</span>"
+        <div class="spancontainer">
+          "<span>10A1</span>
+          <span>.3</span>
+          <span>carry</span>
+          <span>on!</span>"
+        </div>
+        <p
+          class="author"
+          data-sal-duration="600"
+          data-sal="slide-left"
+          data-sal-delay="300"
+          data-sal-easing="ease-in-out-bounce"
+          data-sal-repeat="1"
+        >
+          -by<span>Bảo Ngọc</span>
+        </p>
       </div>
-      <p
-        class="author"
-        data-sal-duration="900"
-        data-sal="slide-left"
-        data-sal-delay="900"
-        data-sal-easing="ease-out"
-        data-sal-repeat="1"
-      >
-        -by <span>Bảo Ngọc</span>
-      </p>
     </section>
-    <button class="btn"></button>
+    <button class="btn"><ion-icon name="chevron-up-outline"></ion-icon></button>
     <script src="./js/script.js"></script>
     <script src="./js/node_modules/sal.js/dist/sal.js"></script>
     <script>
       sal();
     </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
